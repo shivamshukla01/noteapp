@@ -1,25 +1,44 @@
 .numberCircle {
     border-radius: 50%;
-    width: 100px;   /*adjust width */
+    width: 80px;   /*adjust width */
     font-size: 60px ;
-    border: 2px solid turquoise;
-    background-color: turquoise;
+    border: 0px solid #0a762e;
+    background-color: #0fbd49;
     color:white;
     text-decoration: bold;
 }
 .numberCircle span {
     text-align: center;
-    line-height: 100px;  /* adjust height */
+    line-height: 80px;  /* adjust height */
     display: block;
 
 }
 
+.subsummary {
+    position:relative;
+    top:-30px;
+}
 
 .relative {
-	position: relative;
-  top: -90px;
-  left: 120px;
+    font-weight: bold;
+    position: relative;
+    top: -85px;
+    left: 100px;
+    padding-right: 100px;
   
+}
+
+.relative h2 {
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.sec1{
+    max-height: 130px;
+}
+
+.sectiontitle{
+    font-weight: bold;
 }
 /* navbar */
 .navbar-default {
@@ -245,6 +264,6 @@ ul.social-icons {
 /*socialover*/
 
 .footer .well{
-	background-color:#0f8a38;
+	background-color:#0a762e;
 }
 
