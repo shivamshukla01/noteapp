@@ -1,4 +1,4 @@
-.numberCircle {
+ .numberCircle {
     border-radius: 50%;
     width: 80px;   /*adjust width */
     font-size: 60px ;
@@ -19,13 +19,76 @@
     top:-30px;
 }
 
+/*latest upload panel*/
+.subbox{
+    width:250px;
+    padding-left: :100px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -o-transition:.2s;
+    -ms-transition:.2s;
+    -moz-transition:.2s;
+    -webkit-transition:.2s;
+    transition: .2s;
+
+}
+
+.subbox:hover{
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+.subbox a{
+    
+    text-decoration: none !important;
+}
+
+.subbox .photo{
+    height:100px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 100px;
+    font-weight: bold;
+    color: white;
+    font-size: 70px;
+
+}
+
+
+.subbox .cat {
+    background-color: #0fbd49;
+    width:100%;
+    color:#d1fadf;
+}
+
+.subname{
+    height: 85px;
+    padding-top:10px;
+    vertical-align: middle;
+    overflow:visible;
+    padding-left: 0%;
+    text-align: center;
+    font-size: 1.2em;
+
+
+}
+.cat a{
+    color:#d1fadf;
+}
+
+/*latest upload panel over */
+
+
 .relative {
     font-weight: bold;
     position: relative;
-    top: -85px;
+    top: -100px;
     left: 100px;
     padding-right: 100px;
   
+}
+
+.relative a{
+	text-decoration: none;
 }
 
 .relative h2 {
@@ -39,6 +102,7 @@
 
 .sectiontitle{
     font-weight: bold;
+    padding-bottom: 50px;
 }
 /* navbar */
 .navbar-default {

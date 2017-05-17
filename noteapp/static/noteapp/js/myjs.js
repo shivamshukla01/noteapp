@@ -5,13 +5,14 @@ $(document).ready(function() {
       //.log to determine when you want the 
       //nav bar to stick.  
       console.log($(window).scrollTop())
-    if ($(window).scrollTop() > 50) {
+    if ($(window).scrollTop() > 63) {
       $('.navbar').addClass('navbar-fixed-top');
       $('.navbar-brand').removeClass('navbar-brand-hidden');
     }
-    if ($(window).scrollTop() < 50) {
+    if ($(window).scrollTop() <0.1 ) {
       $('.navbar').removeClass('navbar-fixed-top');
       $('.navbar-brand').addClass('navbar-brand-hidden');
+
     }
   });
 });
