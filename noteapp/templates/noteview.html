@@ -14,7 +14,20 @@
 		</div>
     </div>
     
-    <a href="{{note.srcfile}}">Download</a>
+      <div class="jumbotron">
+        <h2>Title:{{note.title}}</h1>
+        <p>
+          <span class="glyphicon glyphicon-apple"></span> Subject: {{note.subj}}
+          <br>
+          <span class="glyphicon glyphicon-check"></span>  Topics covered: {{note.topics}}
+          <br>
+          <span class="glyphicon glyphicon-user"></span> Author: {{note.author}}
+          <br>
+          <span class="glyphicon glyphicon-export"></span> Published on: {{note.created_date|date:"D,d M Y"}}
+
+        </p>
+        <p><a class="btn btn-primary btn-lg" href="{{note.srcfile}}" role="button">View/Download</a></p>
+      </div>
 
 	
 </div>	
