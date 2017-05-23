@@ -28,7 +28,7 @@
   <body>
     <div id="banner" class="container-fluid">
       <div class="row">
-        <div class="col-md-12"><h2 align="center">NotesGeek.com</h2></div>
+        <div class="col-md-12"><h2 align="center">NotesGeek.com <sup><small>BETA</small></sup></h2></div>
       </div>
     </div>
     
@@ -43,7 +43,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand navbar-brand-hidden" href="#">NotesGeek.com</a>
+          <a class="navbar-brand navbar-brand-hidden" href="{% url 'index' %}">NotesGeek.com</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
@@ -51,19 +51,20 @@
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Branch <span class="caret"></span></a>
               <ul class="dropdown-menu">
-                <li><a href="{% url 'CSE' %}">CSE</a></li>
-                <li><a href="{% url 'EEE' %}">EEE</a></li>
-                <li><a href="{% url 'IT' %}">IT</a></li>
-                <li><a href="{% url 'ECE' %}">ECE</a></li>
-                <li><a href="{% url 'ME' %}">ME</a></li>
-                <li><a href="{% url 'BIOTECH' %}">BIOTECH</a></li>
-                <li><a href="{% url 'ET' %}">E&amp;T</a></li>
-                <li><a href="{% url 'CIVIL' %}">CIVIL</a></li>
+                <li><a href="{% url 'branchview' shortname='all' %}">ALL</a></li>
+                <li><a href="{% url 'branchview' shortname='cse' %}">CSE</a></li>
+                <li><a href="{% url 'branchview' shortname='eee' %}">EEE</a></li>
+                <li><a href="{% url 'branchview' shortname='it' %}">IT</a></li>
+                <li><a href="{% url 'branchview' shortname='ece' %}">ECE</a></li>
+                <li><a href="{% url 'branchview' shortname='me' %}">ME</a></li>
+                <li><a href="{% url 'branchview' shortname='bio' %}">BIOTECH</a></li>
+                <li><a href="{% url 'branchview' shortname='et' %}">E&amp;T</a></li>
+                <li><a href="{% url 'branchview' shortname='ce' %}">CIVIL</a></li>
               </ul>
             </li>
-            <li><a href="{% url 'qpview' %}">Previous Year Questions</a></li>
-            <li><a href="{% url 'upload' %}">Upload</a></li>
-            <li><a href="{% url 'contact' %}">Contact Us</a></li>
+            <li><a href="{% url 'comingsoon' %}">Previous Year Questions</a></li>
+            <li><a href="{% url 'comingsoon' %}">Upload</a></li>
+            <li><a href="{% url 'comingsoon' %}">Contact Us</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
             

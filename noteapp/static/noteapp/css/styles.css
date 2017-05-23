@@ -14,6 +14,21 @@
 
 }
 
+ .numberSquare {
+    width: 80px;   /*adjust width */
+    font-size: 60px ;
+    border: 0px solid #0a762e;
+    background-color: #0fbd49;
+    color:white;
+    text-decoration: bold;
+}
+.numberSquare span {
+    text-align: center;
+    line-height: 80px;  /* adjust height */
+    display: block;
+
+}
+
 .subsummary {
     position:relative;
     top:-30px;
@@ -94,6 +109,31 @@
 .relative h2 {
     font-weight: bold;
     font-size: 2em;
+}
+
+.relative2 {
+    font-weight: bold;
+    position: relative;
+    top: -100px;
+    left: 100px;
+    padding-right: 100px;
+  
+}
+
+.relative2 h2 {
+    font-weight: bold;
+    font-size: 2em;
+}
+.relative2 h3 {
+    font-size: 1.2em;
+    position: relative;
+    top: -50px;
+    padding-right: 100px;
+    line-height: 25px;
+}
+
+.notelistitem a{
+    height:120px;
 }
 
 .sec1{

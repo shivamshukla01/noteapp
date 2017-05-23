@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-9">
+        <ol class="breadcrumb">
+  			<li class="breadcrumb-item"><a href="{% url 'index' %}">HOME</a></li>
+  			<li class="breadcrumb-item"><a href="{% url 'branchview' shortname='all' %}">SUBJECTS</a></li>
+  			<li class="breadcrumb-item"><a href="{% url 'subjectview' pk=note.subj.pk %}">{{note.subj}}</a></li>
+  			<li class="breadcrumb-item active">{{note.title}}</li>
+		</ol>
+		</div>
+    </div>
+    
+    <a href="{{note.srcfile}}">Download</a>
+
+	
+</div>	
+	
+{% endblock %}
